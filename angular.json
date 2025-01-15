@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/angular-test-deploy",
             "index": "src/index.html",
+            "browser": "/angular-test-deploy/",
             "polyfills": [
               "zone.js"
             ],
