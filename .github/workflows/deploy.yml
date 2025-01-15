@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: ng deploy --base-href=/angular-test-deploy/
+        run: npm run build --configuration=production --base-href=https://evgenyburakov.github.io
         env:
           TEST: ${{ secrets.TEST }}
 
