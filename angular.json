@@ -16,6 +16,7 @@
             "outputPath": "dist/angular-test-deploy",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref": "/angular-test-deploy/",
             "polyfills": [
               "zone.js"
             ],
