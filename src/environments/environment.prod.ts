@@ -1,6 +1,6 @@
-import 'dotenv/config';
+declare const apiKey: string;
 
 export const environment = {
   production: true,
-  test: process.env['TEST'] || 'test_prod',
+  test: import.meta.env['TEST'] || 'test_prod',
 };
