@@ -1,5 +1,5 @@
 declare interface Env {
-  readonly TEST: string;
+  readonly NG_APP_PUBLIC_TEST: string;
 }
 
 declare interface ImportMeta {
