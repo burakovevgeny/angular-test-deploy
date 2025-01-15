@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
+      - uses: npm/action-setup@v4
         with:
           version: 9
       - uses: actions/setup-node@v4
@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm build --configuration production
+        run: npm run build --configuration production
         env:
           TEST: ${{ secrets.TEST }}
 
