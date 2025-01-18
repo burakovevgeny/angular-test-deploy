@@ -20,10 +20,10 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org
       - name: Install Dependencies
-        run: npm install
+        run: pnpm i --frozen-lockfile
 
       - name: Build Angular app
-        run: npm run build --configuration=production
+        run: pnpm run build --configuration=production
         env:
           NG_APP_TEST: ${{ secrets.TEST }}
 
