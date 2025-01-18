@@ -10,4 +10,9 @@ import { environment } from '../environments/environment.prod';
 })
 export class AppComponent {
   title = environment.test;
+
+  constructor() {
+    console.log(this.title);
+    console.log(import.meta.env);
+  }
 }

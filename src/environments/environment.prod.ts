@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  test: 'test_prod',
+  test: import.meta.env.NG_APP_TEST,
 };
