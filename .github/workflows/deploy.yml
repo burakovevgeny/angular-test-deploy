@@ -25,7 +25,7 @@ jobs:
       - name: Build Angular app
         run: npm run build --configuration=production
         env:
-          TEST: ${{ secrets.TEST }}
+          NG_APP_TEST: ${{ secrets.TEST }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
